@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Register Page </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+<body>
+
+  <div class="bar">
+    <div class="nav"><a href="index.html">Home</a></div>
+    <div class="nav logo"></div>
+    <div class="nav">
+      <div class="cred"><a href="login.html">Login</a></div>
+      <div class="cred"><a href="signup.html">SignUp</a></div>
+    </div>
+
+  </div>
+
+	<div class="container">
+		<form method="post" action="signup.php" id="regForm">
+			<h2>Register</h2>
+			<div class="fields">
+				
+				<input name ="FirstName" type = text placeholder="FirstName"  required >
+			</div>
+			<div class="fields">
+				
+				<input  name ="LastName" type = text placeholder="LastName" required >
+			</div>
+						<div class="fields">
+							<input name ="studentid" type = number placeholder="studentid" required="">
+						</div>
+						<div class="fields">
+							<input id="pass1" name ="Password" type = password placeholder="password" required>
+						</div>
+						<div class="fields">
+							<input id="pass2" name ="confirmPassword" type = password placeholder="confirm password" required>
+						</div>
+					<script>
+    				function myFunction() {
+        			var pass1 = document.getElementById("pass1").value;
+			        var pass2 = document.getElementById("pass2").value;
+			        if (pass1 != pass2) {
+			            //alert("Passwords Do not match");
+			            document.getElementById("pass1").style.borderColor = "#E34234";
+			            document.getElementById("pass2").style.borderColor = "#E34234";
+			        }
+			        else {
+			            alert("Passwords Match!!!");
+			            document.getElementById("regForm").submit();
+        }
+    }
+</script>
+
+
+					<div class="fields">
+						<button id=submit type="button" onclick="myFunction()">Sumbit</button>
+					</div>
+
+
+				</form>
+			</div>
+			<div class="footer">
+	<div class="left">
+		<ul>
+			<li>University of Central Missouri</li>
+			<li>Web Development 201</li>
+		</ul>
+	</div>	
+	<div class="center">
+		<ul>
+			<li>University of Central Missouri</li>
+			<li>Warrensburg,Missouri.</li>
+		</ul>
+	</div>	
+	<div class="right">
+		<ul>
+			<li>Instructor:Jun Wang</li>
+			<li>email:Jwang@ucmo.edu</li>
+		</ul>
+	</div>
+<div>
+
+
+		</body>
+		</html>

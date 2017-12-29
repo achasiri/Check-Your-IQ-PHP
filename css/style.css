@@ -1,0 +1,191 @@
+html,
+body {
+    height:100%;
+    margin: 0px;
+    font-family: 'Roboto Mono', monospace, Times New Roman, Georgia, Serif;
+}
+
+/*ul {
+    
+    margin:  0;
+    padding: 0;
+    background-color: #f7f7f9;
+
+}*/
+a:active {
+  background-color: #d3d3d3;
+}
+a {
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    border-right: 1px solid rgba(0,0,0,0.2) ;
+    border-left: 1px solid rgba(0,0,0,0.2) ;
+}
+
+a:hover {
+    background-color: #d3d3d3;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /*background-color: #f7f7f9;*/
+  background-color:rgba(0,0,0,0.75);
+  z-index: 1;
+  position: relative;
+}
+
+.nav {
+    margin: 5px;
+    padding: 30px;
+    color: #777;
+}
+
+
+.cred {
+    display: inline;
+    padding-left: 10px;
+}
+
+
+.logo {
+    background-image: url(../img/ucmlogo2.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    margin-left:11rem;
+    
+}
+
+
+#cover {
+    background-image: url(../img/home.jpg);
+     background-position: 50% 50%;
+     position: absolute;
+    width: 100%;
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*color: white;*/
+    text-align: center;
+    z-index: 0;
+     top: 88.5px; 
+     bottom: 101px;
+  
+}
+/* styles for Login page */
+
+.form-signin {
+    display: block;
+    max-width: 400px;
+    text-align: center;
+    padding: 30px;
+    margin: 0 auto; to fit in the center of the container
+  }
+
+  .container {
+    display: block;
+    width:100%;
+    
+    margin: 0 auto;
+  }
+
+  form {
+    margin: 0 auto;
+    width:20%;
+  }
+
+  .inputField {
+    display: block;
+    padding: 10px;
+    padding-left: 0px;
+    width: 100%;
+  }
+
+  form h2 {
+    text-align: center;
+  }
+
+  input {
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .checkbox label{
+    display: inline;
+  }
+  .checkbox input{
+    display: inline;
+    width: auto;
+  }
+
+  .checkbox {
+    padding: 10px;
+    padding-left: 0px;
+  }
+
+  form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #337ab7;
+}
+
+textarea {
+    width: 100%;
+}
+
+.options {
+    display: block;
+}
+
+.gOptions {
+    display: inline;
+}
+
+.options input {
+    width: auto;
+}
+
+.fields {
+    padding: 10px;
+    padding-left: 0px;
+}
+
+#submit {
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+}
+
+#logo {
+    margin: 0 auto;
+}
+
+.footer {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color:rgba(0,0,0,0.75);
+  /*text-align: center;*/
+  z-index: 1;
+  color: white;
+  /*flex-wrap: wrap;*/
+  justify-content: space-between;
+  /*flex-direction: column;*/
+}
+
+li {
+  list-style: none;
+  z-index: 1;
+}
+
+
+/*.item:nth-child(2) {
+  align-self: flex-end;
+}*/
